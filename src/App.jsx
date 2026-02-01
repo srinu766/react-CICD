@@ -5,7 +5,7 @@ import Signup from "./components/Signup";
 
 const App = () => {
   return (
-    <Router basename="/react-CICD">
+    <Router>
 
       {/* ---------- HEADER ----------- */}
       <header
