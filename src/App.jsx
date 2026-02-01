@@ -6,6 +6,30 @@ import Signup from "./components/Signup";
 const App = () => {
   return (
     <Router basename="/react-CICD">
+
+      {/* ---------- HEADER ----------- */}
+      <header
+        style={{
+          padding: "15px",
+          background: "#f5f5f5",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
+        <h2>My App</h2>
+
+        <div style={{ display: "flex", gap: "10px" }}>
+          <Link to="/">
+            <button>Login</button>
+          </Link>
+          <Link to="/signup">
+            <button>Signup</button>
+          </Link>
+        </div>
+      </header>
+
+      {/* ---------- ROUTES ---------- */}
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
